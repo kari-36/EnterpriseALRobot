@@ -99,7 +99,7 @@ if ENV:
     NO_LOAD = os.environ.get("NO_LOAD").split()
     NO_LOAD = list(map(str, NO_LOAD))
     SUDO_USERS = os.environ.get("SUDO_USERS", None)
-    DEV_USERS = os.environ.get(DEV_USERS", None)
+    DEV_USERS = os.environ.get("DEV_USERS", None)
     SUPPORT_USERS = os.environ.get("SUPPORT_USERS", None)
     SARDEGNA_USERS = os.environ.get("SARDEGNA_USERS", None)
     WHITELIST_USERS = os.environ.get("WHITELIST_USERS", None)
