@@ -106,7 +106,7 @@ if ENV:
     SPAMMERS = os.environ.get("spammers", None)
     spamwatch_api = os.environ.get("spamwatch_api", None)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
-    TIME_API_KEY os.environ.get("TIME_API_KEY", None)
+    TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
     LASTFM_API_KEY = os.environ.get("LASTFM_API_KEY", None)
     try:
