@@ -96,7 +96,7 @@ if ENV:
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     MESSAGE_DUMP = os.environ.get("MESSAGE_DUMP", None)
     GBAN_LOGS = os.environ.get("GBAN_LOGS", None)
-    
+    WORKERS = int(os.environ.get('WORKERS', 8))
     SUDO_USERS = os.environ.get("SUDO_USERS", None)
     DEV_USERS = os.environ.get("DEV_USERS", None)
     SUPPORT_USERS = os.environ.get("SUPPORT_USERS", None)
