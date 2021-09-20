@@ -83,7 +83,7 @@ if ENV:
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", None)
     CERT_PATH = os.environ.get("CERT_PATH", None)
-    PORT = init(os.environ.get("PORT", None))
+    PORT = int(os.environ.get("PORT", None))
     INFOPIC = bool(os.environ.get("INFOPIC", False))
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", False))
