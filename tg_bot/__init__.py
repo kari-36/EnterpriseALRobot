@@ -39,14 +39,46 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 7:
     )
     quit(1)
 
-parser = ConfigParser()
-parser.read("config.ini")
-kigconfig = parser["kigconfig"]
+ENV = bool(os.environ.get('ENV', False))
+
+if ENV:
+    TOKEN = os.environ.get('TOKEN', None)
+
+    try:
+        OWNER_ID = int(os.environ.get('OWNER_ID', None))
+    except ValueError:
+        raise Exception("Your OWNER_ID env variable is not a valid integer.")
+    
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+
+    try:
+        SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
+        DEV_USERS = {int(x) for x in os.environ.get("DEV_USERS", "").split()}
+    except ValueError:
+        raise Exception(
+            "Your sudo or dev users list does not contain valid integers.")
+
+    try:
+        SUPPORT_USERS = {int(x) for x in os.environ.get("SUPPORT_USERS", "").split()}
+    except ValueError:
+        raise Exception(
+            "Your support users list does not contain valid integers.")
+
+    try:
+        WHITELIST_USERS = {int(x) for x in os.environ.get("WHITELIST_USERS", "").split()}
+    except ValueError:
+        raise Exception(
+            "Your whitelisted users list does not contain valid integers.")
+    try:
+        SARDEGNA_USERS = {int(x) for x in os.environ.get("WHITELIST_USERS", "").split()}
+    except ValueError:
+        raise Exception(
+            "Your whitelisted users list does not contain valid integers.")
 
 
-OWNER_ID = os.environ.get("OWNER_ID", None)
-OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
-APP_ID = os.environ.get("APP_ID", None)
+     OWNER_ID = os.environ.get("OWNER_ID", None)
+     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+     APP_ID = os.environ.get("APP_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
 WEBHOOK = kigconfig.getboolean("WEBHOOK", False)
 URL = os.environ.get("URL", None)
