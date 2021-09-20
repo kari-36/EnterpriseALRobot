@@ -133,6 +133,14 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient(MemorySession(), APP_ID, API_HASH)
 dispatcher = updater.dispatcher
 
+
+SUDO_USERS = list(DRAGONS) + list(DEV_USERS)
+DEV_USERS = list(DEV_USERS)
+S = list(WOLVES)
+DEMONS = list(DEMONS)
+TIGERS = list(TIGERS)
+
+
 kp = Client(":memory:", api_id=APP_ID, api_hash=API_HASH, bot_token=TOKEN, workers=min(32, os.cpu_count() + 4))
 apps = []
 apps.append(kp)
