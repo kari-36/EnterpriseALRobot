@@ -88,7 +88,7 @@ if ENV:
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", False))
     ALLOW_EXCL = bool(os.environ.get("ALLOW_EXCL", False))
-    CUSTOM_CMD = os.environ.get("CUSTOM_CMD", /, !)
+    CUSTOM_CMD = os.environ.get('CUSTOM_CMD', ('/', '!'))
     BAN_STICKER = os.environ.get("BAN_STICKER", None)
     TOKEN = os.environ.get("TOKEN", None)
     DB_URI = os.environ.get("SQLALCHEMY_DATABASE_URI", None)
@@ -96,8 +96,7 @@ if ENV:
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     MESSAGE_DUMP = os.environ.get("MESSAGE_DUMP", None)
     GBAN_LOGS = os.environ.get("GBAN_LOGS", None)
-    NO_LOAD = os.environ.get("NO_LOAD").split()
-    NO_LOAD = list(map(str, NO_LOAD))
+    
     SUDO_USERS = os.environ.get("SUDO_USERS", None)
     DEV_USERS = os.environ.get("DEV_USERS", None)
     SUPPORT_USERS = os.environ.get("SUPPORT_USERS", None)
