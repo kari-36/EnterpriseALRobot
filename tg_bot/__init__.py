@@ -134,7 +134,7 @@ telethn = TelegramClient(MemorySession(), APP_ID, API_HASH)
 dispatcher = updater.dispatcher
 
 
-SUDO_USERS = list(DRAGONS) + list(DEV_USERS)
+SUDO_USERS = list(SUDO_USERS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
 SUPPORT_USERS = list(SUPPORT_USERS)
 WHITELIST_USERS = list(WHITELIST_USERS)
