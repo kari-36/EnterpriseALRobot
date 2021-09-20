@@ -141,6 +141,7 @@ WHITELIST_USERS = list(WHITELIST_USERS)
 SARDEGNA_USERS = list(SARDEGNA_USERS)
 
 
+
 kp = Client(":memory:", api_id=APP_ID, api_hash=API_HASH, bot_token=TOKEN, workers=min(32, os.cpu_count() + 4))
 apps = []
 apps.append(kp)
