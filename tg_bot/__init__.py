@@ -136,9 +136,9 @@ dispatcher = updater.dispatcher
 
 SUDO_USERS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
-S = list(WOLVES)
-DEMONS = list(DEMONS)
-TIGERS = list(TIGERS)
+SUPPORT_USERS = list(SUPPORT_USERS)
+WHITELIST_USERS = list(WHITELIST_USERS)
+SARDEGNA_USERS = list(SARDEGNA_USERS)
 
 
 kp = Client(":memory:", api_id=APP_ID, api_hash=API_HASH, bot_token=TOKEN, workers=min(32, os.cpu_count() + 4))
