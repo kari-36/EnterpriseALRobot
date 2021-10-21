@@ -7,7 +7,7 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.8-green?style=for-the-badge&logo=appveyor)
 ![Issues](https://img.shields.io/github/issues/Dank-del/EnterpriseALRobot?style=for-the-badge&logo=appveyor)
-![Forks](https://img.shields.io/github/forks/Dank-del/EnterpriseALRobot?style=for-the-badge&logo=appveyor)
+![Forks](https://img.shields.io/github/forks/kari-36/EnterpriseALRobot?style=for-the-badge&logo=appveyor)
 ![Stars](https://img.shields.io/github/stars/Dank-del/EnterpriseALRobot?style=for-the-badge&logo=appveyor)
 ![LICENSE](https://img.shields.io/github/license/Dank-del/EnterpriseALRobot?style=for-the-badge&logo=appveyor)
 ![Contributors](https://img.shields.io/github/contributors/Dank-del/EnterpriseALRobot?style=for-the-badge&logo=appveyor)
